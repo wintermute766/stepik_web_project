@@ -3,7 +3,6 @@ from qa.views import test
 
 urlpatterns = patterns('',
    url(r'^$', test, name='main'),
-   url(r'^\?page=(?P<page>\d+)', qa_list_all, name='main'),
    url(r'^login/', test, name='login'),
    url(r'^signup/', test, name='signup'),
    url(r'^question/(?P<id>\d+)/', test, name='question'),
